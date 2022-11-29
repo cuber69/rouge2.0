@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+	/* Content */
+	--background: #D04343;
+
+	/* Text */
+	--text-font: 'Montserrat', sans-serif;
+	--text-color: white;
+	--text-weight: bold;
+
+	
+	/* Widgets */
+	--widget-background: #B82B2B;
+	--widget-border: #9C0909;
+	--widget-border-size: 0.3vw;
+
+	/* Pinned */
+	--pinned-background: #B82B2B;
+	--pinned-widget-color: hsl(0deg 62% 45%);
+
+	/* Context Menu */
+	--contextmenu-width: 10vw;
+	--contextmenu-height: 15vw;
+}
+
+* {
+	font-family: var(--text-font);
+	color: var(--text-color);
+}
+
+p, h1, a {
+	transform: perspective(1px);
+	text-rendering: optimizeLegibility;
+}

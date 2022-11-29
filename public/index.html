@@ -1,0 +1,64 @@
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Rogue</title>
+
+	<meta property="og:title" content="Rogue" />
+	<meta property="og:type" content="Rogue" />
+	<meta property="og:url" content="https://rogue.1pqpw.repl.co" />
+	<meta property="og:image" content="images/banner.png" />
+	<meta property="og:description" content="Search, Play, Chat - Go Rogue" />
+	<meta name="theme-color" content="#B82B2B">
+
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<link rel="stylesheet" href="css/index.css">
+
+	<script src="uv/uv.bundle.js" defer></script>
+	<script src="uv/uv.config.js" defer></script>
+	<script src="js/index.js" defer></script>
+</head>
+
+<body>
+	<div class="content">
+		<div class="searchbar">
+			<div class="bar">
+				<img src="images/search2.svg" />
+
+				<input placeholder="Search...">
+			</div>
+		</div>
+		
+		<header>
+			<div class="widget title">
+				<p>Rogue</p>
+			</div>
+		</header>
+
+		<footer>
+			<div class="break">
+				<iframe src="pinned.html" frameBorder="0"></iframe>
+			</div>
+
+			<div class="widgets">
+				<div class="widget lineup" onclick="toggleSearch();">
+					<img src="images/search.png"/>
+					<p>Search</p>
+				</div>
+
+				<div class="widget lineup" data-redirect="/games">
+					<img src="images/game.png"/>
+					<p>Play</p>
+				</div>
+
+				<div class="widget lineup" data-redirect="https://discord.gg/XvshCVhH4h">
+					<img src="images/discord.png"/>
+					<p>Chat</p>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>

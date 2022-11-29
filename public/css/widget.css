@@ -1,0 +1,65 @@
+@import url(/css/root.css);
+
+.widget {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: nowrap;
+	background: var(--widget-background);
+	width: 15vw; height: 5vw;
+	border: var(--widget-border-size) solid var(--widget-border);
+	border-radius: 15px;
+	filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.15));
+	text-align: center;
+	cursor: pointer;
+	transition: 0.2s transform ease-in-out, 0.2s filter ease-in-out;
+	font-weight: bolder;
+	user-select: none;
+}
+
+.widget:hover {
+	transform: scale(1.01);
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.widget.lineup img {
+	margin-right: 0.5vw;
+	width: 2.5vw; height: 2.5vw;
+	user-select: none;
+	pointer-events: none;
+}
+
+.widget.game img {
+	margin-left: 1vw;
+	width: 2.5vw; height: 2.5vw;
+	user-select: none;
+	pointer-events: none;
+}
+
+.widget.title {
+	cursor: default;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+	margin-top: 3vw;
+	width: 35vw; height: 5vw;
+	font-size: 3.2vw;
+}
+
+.widget.game {
+	margin-bottom: 5vw;
+}
+
+.widget.game.big {
+	border: calc(var(--widget-border-size) * 1.5) solid var(--widget-border);
+	font-size: 3.1vw;
+	width: 20vw; height: 8vw;
+	margin-left: 5vw;
+}
+
+.widget.game.big img {
+	margin-left: 2vw;
+	width: 3.5vw; height: 3.5vw;
+	user-select: none;
+	pointer-events: none;
+}

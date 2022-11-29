@@ -1,0 +1,42 @@
+@import url(/css/root.css);
+
+.ctxmenu {
+	z-index: 999999999;
+	display: none;
+	position: absolute;
+	top: var(--ctx-mouse-y); left: var(--ctx-mouse-x);
+}
+
+.ctxmenu#active {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: var(--contextmenu-width); height: var(--contextmenu-height);
+	background: var(--widget-background);
+	border: calc(var(--widget-border-size) * 1.5) solid var(--widget-border);
+	border-radius: 15px;
+	filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ctxmenu .ctxitem {
+	cursor: default;
+	transition: 0.2s background ease-in-out;
+	background: transparent;
+	display: inline-flex;
+	align-items: center;
+	width: 100%; height: 20%;
+	border: 2.5px solid white;
+	font-weight: bold;
+}
+
+.ctxmenu .ctxitem p {
+	margin-left: 1.5vw;
+}
+
+.ctxmenu .ctxitem:active {
+	background: var(--background);
+}
+
+.ctxmenu .ctxitem:nth-child(1) {
+	border-top-left-radius: 10px; border-top-right-radius: 10px;
+}

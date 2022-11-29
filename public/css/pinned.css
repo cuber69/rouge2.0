@@ -1,0 +1,49 @@
+@import url(/css/root.css);
+@import url(/css/widget.css);
+@import url(/css/menu.css);
+
+.content {
+	overflow: hidden;
+	display: block;
+	width: calc(100% - 4vw); height: calc(100% - 4vw);
+	position: absolute;
+	top: 1vw; left: 1vw;
+	background: var(--pinned-background);
+	border: 1vw solid var(--widget-border); border-radius: 15px;
+}
+
+.title {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: center;
+	height: 7vw;
+	position: relative;
+	top: -0.5vw; left: 2vw;
+	font-size: 3vw;
+	user-select: none;
+	font-weight: bolder;
+}
+
+.title img {
+	margin-left: .7vw;
+	width: 5vw; height: 5vw;
+	filter: invert(100%);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+}
+
+.widgets {
+	position: relative;
+	top: 0px; left: 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 70%; height: 40vw;
+}
+
+footer > .widgets > div:nth-child(1) > div {
+	margin-left: 0px !important;
+}
