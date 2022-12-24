@@ -2,6 +2,10 @@
 @import url(/css/widget.css);
 @import url(/css/menu.css);
 
+body {
+	background: transparent;
+}
+
 .content {
 	overflow: hidden;
 	display: block;
@@ -42,6 +46,11 @@ footer {
 	justify-content: center;
 	align-items: center;
 	width: 70%; height: 40vw;
+}
+
+.widgets h2 {
+	font-family: var(--text-font) !important;
+	user-select: none;
 }
 
 footer > .widgets > div:nth-child(1) > div {

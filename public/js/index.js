@@ -31,11 +31,8 @@ function loaders() {
 				uri = location.protocol + "//" + uri;
 			}
 		}
-		window.navigator.serviceWorker.register('./sw.js', {
-			scope: __uv$config.prefix
-		}).then(() => {
-			window.location.assign(__uv$config.prefix + __uv$config.encodeUrl(uri));
-		});
+		
+		window.__openApp(uri);
 	}
 
 	document.querySelector(".searchbar .bar input").addEventListener("keyup", (evt) => {

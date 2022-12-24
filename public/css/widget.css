@@ -14,7 +14,6 @@
 	cursor: pointer;
 	transition: 0.2s transform ease-in-out, 0.2s filter ease-in-out;
 	font-weight: bolder;
-	user-select: none;
 }
 
 .widget:hover {

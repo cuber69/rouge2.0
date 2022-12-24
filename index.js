@@ -1,6 +1,12 @@
 import createBareServer from '@tomphttp/bare-server-node';
 import http from 'http';
 import nodeStatic from 'node-static';
+import fs from 'fs';
+
+const options = {
+	key: fs.readFileSync('ssl/certificate.pem'),
+	cert: fs.readFileSync('ssl/privatekey.pem')
+};
 
 const httpServer = http.createServer();
 
@@ -35,6 +41,4 @@ httpServer.on('listening', () => {
 	console.log('HTTP server listening');
 });
 
-httpServer.listen({
-	port: 8080,
-});
+httpServer.listen(8080);

@@ -1,4 +1,4 @@
-<html lang="en">
+myco<html lang="en">
 
 <head>
 	<meta charset="utf-8">
@@ -8,19 +8,27 @@
 	<meta property="og:title" content="Rogue" />
 	<meta property="og:type" content="Rogue" />
 	<meta property="og:url" content="https://rogue.1pqpw.repl.co" />
-	<meta property="og:image" content="images/banner.png" />
+	<meta property="og:image" content="images/red.png" />
 	<meta property="og:description" content="Search, Play, Chat - Go Rogue" />
 	<meta name="theme-color" content="#B82B2B">
 
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 	<link rel="stylesheet" href="css/index.css">
 
-	<script src="uv/uv.bundle.js" defer></script>
-	<script src="uv/uv.config.js" defer></script>
+	<script type="module" src="pxs/import.js" defer></script>
+	
+	<script src="js/root.js" defer></script>
 	<script src="js/index.js" defer></script>
+	<script src="js/cloak.js" defer></script>
+	<script src="js/theme.js" defer></script>
 </head>
 
 <body>
+	<script src="/pxs/uv/beta/uv.bundle.js"></script>
+	<script src="/pxs/uv/beta/uv.config.js"></script>
+	<script src="/pxs/ratic/ratic.sw.js"></script>
+	<script src="/pxs/ratic/ratic.config.js"></script>
+	
 	<div class="content">
 		<div class="searchbar">
 			<div class="bar">
@@ -47,7 +55,7 @@
 					<p>Search</p>
 				</div>
 
-				<div class="widget lineup" data-redirect="/games">
+				<div class="widget lineup" data-redirect="/games.html">
 					<img src="images/game.png"/>
 					<p>Play</p>
 				</div>
@@ -60,5 +68,4 @@
 		</footer>
 	</div>
 </body>
-
 </html>

@@ -1,35 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@font-face {
+	font-family: Arial;
+	src: url(/fonts/ArialTh.ttf);
+}
+
+@keyframes onLoad {
+	0% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+body {
+	background: #c7b2b2;
+}
+
 :root {
-	/* Content */
-	--background: #D04343;
-
-	/* Text */
-	--text-font: 'Montserrat', sans-serif;
-	--text-color: white;
-	--text-weight: bold;
-
-	
-	/* Widgets */
-	--widget-background: #B82B2B;
-	--widget-border: #9C0909;
 	--widget-border-size: 0.3vw;
-
-	/* Pinned */
-	--pinned-background: #B82B2B;
-	--pinned-widget-color: hsl(0deg 62% 45%);
-
+	--text-weight: bold;
+	
 	/* Context Menu */
 	--contextmenu-width: 10vw;
 	--contextmenu-height: 15vw;
 }
 
+*:not(*[data-theme]) {
+	--background: #D04343;
+
+	/* Text */
+	--text-font: 'Montserrat', sans-serif;
+	--text-color: white;
+	
+	/* Widgets */
+	--widget-background: #B82B2B;
+	--widget-border: #9C0909;
+	
+
+	/* Pinned */
+	--pinned-background: #B82B2B;
+	--pinned-widget-color: hsl(0deg 62% 45%);
+}
+
+*[data-theme="hub"] {
+	--background: #000000;
+
+	/* Text */
+	--text-font: 'Montserrat', sans-serif;
+	--text-color: white;
+	
+	/* Widgets */
+	--widget-background: #ff9000;
+	--widget-border: #ff9000;
+	
+
+	/* Pinned */
+	--pinned-background: #b87319;
+	--pinned-widget-color: #8a5715;
+}
+
+*[data-theme="incog"] {
+	--background: #161923;
+
+	/* Text */
+	--text-font: 'Montserrat', sans-serif;
+	--text-color: white;
+	
+	/* Widgets */
+	--widget-background: #3cb371;
+	--widget-border: #266d46;
+	
+
+	/* Pinned */
+	--pinned-background: #2e8455;
+	--pinned-widget-color: #266d46;
+}
+
 * {
 	font-family: var(--text-font);
 	color: var(--text-color);
-}
-
-p, h1, a {
-	transform: perspective(1px);
 	text-rendering: optimizeLegibility;
 }

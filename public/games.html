@@ -15,16 +15,32 @@
 	<link rel="icon" type="image/png" href="images/favicon.png" />
 	<link rel="stylesheet" href="css/games.css">
 	
-	<script src="uv/uv.bundle.js" defer></script>
-	<script src="uv/uv.config.js" defer></script>
-
 	<script src="js/root.js" defer></script>
 	<script src="js/game.js" defer></script>
 	<script src="js/menu.js" defer></script>
 </head>
 
 <body>
+	<script src="/pxs/uv/client.js"></script>
+	<script src="/pxs/uv/beta/uv.bundle.js"></script>
+	<script src="/pxs/uv/beta/uv.config.js"></script>
+	<script src="/pxs/ratic/ratic.sw.js"></script>
+	<script src="/pxs/ratic/ratic.config.js"></script>
+	
 	<div class="content">
+		<div class="addGame">
+			<div class="add">
+				<div class="title">
+					<p>Add an app</p>
+					<hr>
+				</div>
+				
+				<div class="in">
+					<input placeholder="Enter a URL:">
+				</div>
+			</div>
+		</div>
+		
 		<div class="ctxmenu">
 			<span class="ctxitem" id="ctxpin">
 				<p>Pin</p>
@@ -33,13 +49,12 @@
 		
 		<header>
 			<div class="widget title" onclick="location.pathname='/';">
-				<p>Games</p>
+				<p>Apps</p>
 			</div>
 		</header>
 
 		<footer>
 			<div class="widgets">
-				
 			</div>
 		</footer>
 	</div>
